@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template  2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/60d254700e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="header-left">
+        <h3> Edit Profile</h3>
+        <img src="https://cdn.vectorstock.com/i/1000x1000/23/49/new-man-avatar-icon-flat-vector-19152349.webp" />
+        </div>
+        <div class="header-right">
+          <i class="fa-regular fa-bell"></i>
+          <img src="https://cdn.vectorstock.com/i/1000x1000/23/49/new-man-avatar-icon-flat-vector-19152349.webp" />
+        </div>
+      <form>
+        <div class="body">
+          <div class="input-group firstname">
+            <label for="firstname" >First Name</label>
+            <input
+              name="firstname"
+              placeholder="Tran Ngoc"
+            />
+          </div>
+          <div class="input-group lastname">
+            <label for="lastname">Last Name</label>
+            <input
+              name="lastname"
+              placeholder="Canh"
+            />
+          </div>
+        <div class="input-group email">
+          <label for="email">Email</label>
+          <input
+            name="email"
+            placeholder="canhdzvl@okela.com "
+          />
+        </div>
+        <div class="input-group address">
+          <label for="address">Address</label>
+          <input
+            name="address"
+            placeholder="An Vi, Khoai Chau, Hung Yen"
+          />
+        </div>
+        <div class="input-group ctnumber">
+          <label for="ctnumber">Contact Number</label>
+          <input
+            name="ctnumber"
+            placeholder=" +84 123 456 78"
+          />
+        </div>
+          <div class="input-group city">
+            <label for="city">City</label>
+            <div class="custom_select">
+            <select id="" name="ipcity">
+              <option value="1">Hà Nội</option>
+              <option value="2">Hưng Yên</option>
+              <option value="3">TP. Hồ Chí Minh</option>
+              <option value="4">New York</option>
+              <option value="5">Manchester</option>
+            </select>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+          <div class="input-group state">
+            <label for="state">State</label>
+            <div class="custom_select">
+            <select id="" name="ipstate">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+          <div class="input-group password">
+            <label for="password">Password</label>
+            <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            />
+            <span class="toggle-icon" onclick="togglePasswordVisibility()">
+              <i class="fa-solid fa-eye"></i>
+            </span>
+          </div>
+          <div class="button">
+          <button class="cancel-btn" type="submit" id="cancel-button">
+              Cancel
+          </button>
+          <button class="login-btn" type="submit" id="login-button">
+              Login
+          </button>
+        </div>
+      </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
